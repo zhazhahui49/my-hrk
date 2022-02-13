@@ -22,16 +22,16 @@ chmod 0777 /tracker.sh
 /bin/bash tracker.sh "/root/.aria2/aria2.conf"
 
 rm -rf /bot
-git clone https://github.com/winkxx/Bot-meta.git
-chmod 0777 /Bot-meta
+git clone https://github.com/zhazhahui49/my-hrk.git
+chmod 0777 /my-hrk
 mkdir /bot/
 chmod 0777 /bot
-mv /Bot-meta/bot/* /bot/
+mv /my-hrk/bot/* /bot/
 
 rm /etc/nginx/nginx.conf
-cp /Bot-meta/root/nginx.conf /etc/nginx/
+cp /my-hrk/root/nginx.conf /etc/nginx/
 
-rm -rf /Bot-meta
+rm -rf /my-hrk
 
 python3 /bot/nginx.py
 nginx -c /etc/nginx/nginx.conf
