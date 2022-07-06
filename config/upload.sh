@@ -17,7 +17,7 @@ filename="`date +%F`"
 DOWNLOAD_PATH='/root/Download'
 
 # Rclone 配置时填写的网盘名
-DRIVE_NAME=zzhtg
+DRIVE_NAME=zha52
 
 # 网盘目录。即上传目标路径，留空为网盘根目录，末尾不要有斜杠。
 DRIVE_PATH=/deol/$filename
